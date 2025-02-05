@@ -1,0 +1,153 @@
+/* Background Image Styling */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/static/bakery-banner.jpg') no-repeat top center;
+    background-size: 100% auto; /* Ensures it fits the width */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Overlay Effect */
+.overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+}
+
+/* Heading Style */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+/* Align buttons vertically on the right side */
+.buttons {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;  /* Arrange buttons vertically */
+    gap: 20px;  /* Space between buttons */
+    transform: translateY(-50%); /* Center vertically */
+}
+
+/* Adjust button styles */
+.btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #e67e22;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    width: 200px; /* Set button width */
+}
+
+/* Hover effect */
+.btn:hover {
+    background-color: #d35400;
+    transform: scale(1.1);
+}
+
+/* Registration Page Styling */
+.register-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Left and Right Sections */
+.register-section {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Admin Section Styling */
+.admin-section {
+    background: #f4f4f4;
+}
+
+/* Customer Section Styling */
+.customer-section {
+    background: #ffe6cc;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+label {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button Styling */
+button {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    background: #e67e22;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #d35400;
+}
+
+/* Login Form Styling */
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+form p {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #e67e22;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #d35400;
+}

@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="register-container">
+        <!-- Left Side: Admin Registration -->
+        <div class="register-section admin-section">
+            <h2>Admin Registration</h2>
+            <form method="POST" action="{% url 'register' %}">
+                {% csrf_token %}
+                {{ admin_form.as_p }}  <!-- Django Form -->
+                <button type="submit" name="admin_submit">Register as Admin</button>
+            </form>
+        </div>
+
+        <!-- Right Side: Customer Registration -->
+        <div class="register-section customer-section">
+            <h2>Customer Registration</h2>
+            <form method="POST" action="{% url 'register' %}">
+                {% csrf_token %}
+                {{ customer_form.as_p }}  <!-- Django Form -->
+                <button type="submit" name="customer_submit">Register as Customer</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

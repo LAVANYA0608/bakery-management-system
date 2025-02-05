@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="/static/css/customer_dashboard_styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bakery Products</h1>
+        <div class="product-grid">
+            {% for product in products %}
+            <div class="product-card">
+                <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                <div class="product-info">
+                    <h2>{{ product.name }}</h2>
+                    <p>{{ product.description }}</p>
+                    <span class="price">&#8377;{{ product.price }}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

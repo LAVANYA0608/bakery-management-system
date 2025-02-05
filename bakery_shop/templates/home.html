@@ -1,0 +1,22 @@
+{% load static %}  <!-- ✅ Add this line at the very top -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Home</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="overlay">
+            <div class="buttons">
+                <a href="{% url 'register' %}" class="btn">Register</a>
+                <a href="{% url 'customer_login' %}" class="btn">Customer Login</a>
+                <a href="{% url 'admin_login' %}" class="btn">Admin Login</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
